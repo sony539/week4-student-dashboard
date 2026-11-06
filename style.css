@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1e3a5f;
+  margin-bottom: 25px;
+}
+
+#studentForm,
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1e3a5f;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #1e3a5f;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #14304f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background: #1e3a5f;
+  color: #fff;
+}
+
+tr:hover {
+  background: #f5f8fc;
+}
+
+.edit-btn {
+  background: #f0a500;
+  margin-right: 5px;
+  padding: 6px 12px;
+}
+
+.delete-btn {
+  background: #d93025;
+  padding: 6px 12px;
+}
+
+#emptyMsg {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}

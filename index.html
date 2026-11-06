@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Management Dashboard</h1>
+
+    <!-- Add / Edit form -->
+    <form id="studentForm">
+      <input type="hidden" id="studentId">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="rollNo" placeholder="Roll No" required>
+      <select id="branch" required>
+        <option value="">Select Branch</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="MECH">MECH</option>
+        <option value="CIVIL">CIVIL</option>
+      </select>
+      <input type="number" id="marks" placeholder="Marks" min="0" max="100" required>
+      <button type="submit" id="submitBtn">Add Student</button>
+    </form>
+
+    <!-- Search and filter -->
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search by name or roll no...">
+      <select id="filterBranch">
+        <option value="">All Branches</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="MECH">MECH</option>
+        <option value="CIVIL">CIVIL</option>
+      </select>
+    </div>
+
+    <!-- Students table -->
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Roll No</th>
+          <th>Branch</th>
+          <th>Marks</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody"></tbody>
+    </table>
+
+    <p id="emptyMsg">No students found.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
