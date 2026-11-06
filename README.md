@@ -13,4 +13,4 @@ A front-end CRUD application to manage student records, built as the Week 4 caps
 HTML, CSS, JavaScript
 
 ## Live Demo
-Link will be added after deployment
+https://sony539.github.io/week4-student-dashboard/
